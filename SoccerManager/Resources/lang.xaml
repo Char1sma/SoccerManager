@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+  <v:String x:Key="WelcomeMessage">Welcome!</v:String>
+  <v:String x:Key="Home">Home</v:String>
+  <v:String x:Key="Exit">Exit</v:String>
+  <v:String x:Key="HomeCaption">Home page</v:String>
+  <v:String x:Key="SelectLanguage">Select language</v:String>
+    
+</ResourceDictionary>

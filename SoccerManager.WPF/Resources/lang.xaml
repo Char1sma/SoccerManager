@@ -1,0 +1,38 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+  <v:String x:Key="WelcomeMessage">Welcome!</v:String>
+  <v:String x:Key="Home">Home</v:String>
+  <v:String x:Key="Exit">Exit</v:String>
+  <v:String x:Key="HomeCaption">Home page</v:String>
+
+  <v:String x:Key="ClubsCaption">Clubs list</v:String>
+  <v:String x:Key="PlayersCaption">Players list</v:String>
+  <v:String x:Key="FansCaption">Fans list</v:String>
+
+  <v:String x:Key="SelectLanguage">Select language</v:String>
+
+  <v:String x:Key="CheckInput">Check if an input is correct</v:String>
+
+  <v:String x:Key="Submit">Submit</v:String>
+  <v:String x:Key="Cancel">Cancel</v:String>
+  <v:String x:Key="Ok">OK</v:String>
+  <v:String x:Key="Add">Add</v:String>
+  <v:String x:Key="Preview">Preview</v:String>
+  <v:String x:Key="Delete">Delete</v:String>
+  <v:String x:Key="DeleteSelected">Delete selected</v:String>
+  <v:String x:Key="Edit">Edit</v:String>
+
+  <v:String x:Key="ClubName">Name</v:String>
+  <v:String x:Key="ClubCity">City</v:String>
+  <v:String x:Key="PlayersList">Players</v:String>
+
+  <v:String x:Key="PlayerName">Name</v:String>
+  <v:String x:Key="PlayerSnils">SNILS</v:String>
+  <v:String x:Key="PlayerBirthDate">Birth date</v:String>
+  <v:String x:Key="PlayerClub">Club</v:String>
+
+  <v:String x:Key="FanName">Name</v:String>
+  <v:String x:Key="FanClubs">Fan clubs</v:String>
+
+</ResourceDictionary>

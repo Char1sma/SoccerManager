@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="SoccerManager.Client.Views.Modals.PlayerEditingView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SoccerManager.Client.Views.Modals"
+             xmlns:modalContext="clr-namespace:SoccerManager.Client.ViewModels.ModalContext"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             d:DataContext="{d:DesignInstance modalContext:PlayerEditingViewModel}">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="3*"/>
+      <ColumnDefinition Width="6*"/>
+    </Grid.ColumnDefinitions>
+
+    <TextBlock Text="{DynamicResource PlayerName}"
+               Grid.Row="0"
+               Grid.Column="0"
+               Margin="10 20"/>
+    <TextBox Grid.Row="0"
+             Grid.Column="1"
+             Text="{Binding Player.Name}"
+             Height="24"
+             Margin="10 20"/>
+
+    <TextBlock Text="{DynamicResource PlayerSnils}"
+               Grid.Row="1"
+               Grid.Column="0"
+               Margin="10 20"/>
+    <xctk:MaskedTextBox Grid.Row="1"
+                        Grid.Column="1"
+                        Text="{Binding Player.Snils}"
+                        Height="24"
+                        Margin="10 20"
+                        Mask="000-000-000-00"/>
+
+    <TextBlock Text="{DynamicResource PlayerBirthDate}"
+               Grid.Row="2"
+               Grid.Column="0"
+               Margin="10 20"/>
+    <DatePicker Grid.Row="2"
+                Grid.Column="1"
+                DisplayDate="{Binding Player.BirthDate}"
+                Margin="10 20"/>
+
+    <TextBlock Text="{DynamicResource PlayerClub}"
+               Grid.Row="3"
+               Grid.Column="0"
+               Margin="10 20"/>
+    <StackPanel Orientation="Horizontal"
+                Grid.Row="3"
+                Grid.Column="1">
+      <ComboBox Height="28"
+                Width="200"
+                SelectedItem="{Binding Player.Club, UpdateSourceTrigger=PropertyChanged}"
+                ItemsSource="{Binding Clubs}"
+                DisplayMemberPath="FullName"
+                Margin="10 20"/>
+      <Button Content="X"
+              Command="{Binding NullifyClubSelectionCommand}"
+              Width="25"
+              Height="20"
+              Padding ="0"
+              Margin="4"/>
+    </StackPanel>
+    
+
+  </Grid>
+</UserControl>

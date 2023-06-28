@@ -1,0 +1,38 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+  <v:String x:Key="WelcomeMessage">Добро пожаловать!</v:String>
+  <v:String x:Key="Home">На главную</v:String>
+  <v:String x:Key="Exit">Выйти</v:String>
+  <v:String x:Key="HomeCaption">Главная страница</v:String>
+
+  <v:String x:Key="ClubsCaption">Список клубов</v:String>
+  <v:String x:Key="PlayersCaption">Список игроков</v:String>
+  <v:String x:Key="FansCaption">Список фанов</v:String>
+
+  <v:String x:Key="SelectLanguage">Выберите язык</v:String>
+
+  <v:String x:Key="CheckInput">Проверьте правильность ввода</v:String>
+
+  <v:String x:Key="Submit">Принять</v:String>
+  <v:String x:Key="Cancel">Отмена</v:String>
+  <v:String x:Key="Ok">OK</v:String>
+  <v:String x:Key="Add">Добавить</v:String>
+  <v:String x:Key="Preview">Показать</v:String>
+  <v:String x:Key="Delete">Удалить</v:String>
+  <v:String x:Key="Edit">Изменить</v:String>
+  <v:String x:Key="DeleteSelected">Удалить выбранный</v:String>
+
+  <v:String x:Key="ClubName">Название</v:String>
+  <v:String x:Key="ClubCity">Город</v:String>
+  <v:String x:Key="PlayersList">Игроки</v:String>
+
+  <v:String x:Key="PlayerName">ФИО</v:String>
+  <v:String x:Key="PlayerSnils">СНИЛС</v:String>
+  <v:String x:Key="PlayerBirthDate">Дата рождения</v:String>
+  <v:String x:Key="PlayerClub">Клуб</v:String>
+
+  <v:String x:Key="FanName">ФИО</v:String>
+  <v:String x:Key="FanClubs">Фан-клубы</v:String>
+    
+</ResourceDictionary>
